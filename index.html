@@ -1,86 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>AEGIS Libre Lite Dev Kit</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AEGIS Libre Dev Kit</title>
   <style>
-    body { font-family: Arial, sans-serif; background: #f7f7f7; color: #222; margin: 0; padding: 2rem; }
-    header, section, footer { margin-bottom: 2rem; }
-    h1, h2 { color: #0055a5; }
-    table { width: 100%; border-collapse: collapse; background: white; }
-    th, td { border: 1px solid #ccc; padding: 0.5rem; text-align: left; }
-    th { background: #eaeaea; }
-    ul { margin-top: 0; padding-left: 1.2em; }
-    .contact { background: #e0f7ff; padding: 1rem; border-radius: 8px; }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #0b0c10;
+      color: #c5c6c7;
+      padding: 20px;
+      line-height: 1.6;
+      max-width: 900px;
+      margin: auto;
+    }
+    h1, h2, h3 {
+      color: #66fcf1;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+    th, td {
+      border: 1px solid #45a29e;
+      padding: 8px;
+      text-align: left;
+    }
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #888;
+    }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>AEGIS Libre Lite Dev Kit</h1>
-    <p><strong>Built by Aegiron Technologies</strong> | Open. Powerful. Developer-First.</p>
-  </header>
+<h1>AEGIS Libre Dev Kit</h1>
+<p><strong>Built by Aegiron Technologies</strong> | Open. Powerful. Developer-First.</p>
 
-  <section>
-    <h2>🚀 The World's First Open LGA ARM Dev Kit</h2>
-    <p>Unleash your ideas with a fully socketed <strong>ARMv9-A</strong> platform. Libre Lite is made for <em>educators, embedded devs, AI tinkerers</em>, and <em>open hardware advocates</em>.</p>
-  </section>
+<h2>🚀 The World's First Open LGA ARM Dev Kit</h2>
+<p>Unleash your ideas with a <strong>socketed 12-core ARMv9-A platform</strong>. AEGIS Libre is made for educators, embedded devs, AI tinkerers, and open hardware advocates who demand full access and upgradeability.</p>
 
-  <section>
-    <h2>🔧 Key Specs</h2>
-    <table>
-      <tr><th>Feature</th><th>Detail</th></tr>
-      <tr><td>CPU</td><td>8-core ARMv9-A (AEGIS Libre Lite)</td></tr>
-      <tr><td>Form Factor</td><td>Micro-ATX</td></tr>
-      <tr><td>Memory</td><td>2x DDR5 DIMM (up to 64GB)</td></tr>
-      <tr><td>Storage</td><td>1x M.2 NVMe, 2x SATA III</td></tr>
-      <tr><td>Networking</td><td>2x 1GbE Ethernet</td></tr>
-      <tr><td>USB</td><td>USB 3.2, USB-C</td></tr>
-      <tr><td>Expansion</td><td>1x PCIe Gen 4 x8</td></tr>
-      <tr><td>Debug</td><td>UART, JTAG, HDMI console</td></tr>
-      <tr><td>Power</td><td>ATX or 12V DC-in</td></tr>
-      <tr><td>Price Target</td><td>$199–$249</td></tr>
-      <tr><td colspan="2"><em>💡 Pricing subject to adjustment based on funding, materials, and production volume.</em></td></tr>
+<h3>🔧 Key Specs</h3>
+<table>
+  <tr><th>Feature</th><th>Detail</th></tr>
+  <tr><td>CPU</td><td>12-core ARMv9-A (AEGIS Apollo)</td></tr>
+  <tr><td>Form Factor</td><td>Micro-ATX</td></tr>
+  <tr><td>Memory</td><td>2x DDR5 DIMM (up to 64GB ECC)</td></tr>
+  <tr><td>Storage</td><td>1x M.2 NVMe (bootable), 2x SATA III</td></tr>
+  <tr><td>Networking</td><td>2x 5GbE Ethernet (PXE-enabled)</td></tr>
+  <tr><td>USB</td><td>2x USB 3.2, 1x USB-C, 2x USB 2.0</td></tr>
+  <tr><td>Expansion</td><td>1x PCIe Gen 4 x4</td></tr>
+  <tr><td>Debug</td><td>UART, JTAG, HDMI console</td></tr>
+  <tr><td>GPIO Headers</td><td>2x 40-pin (3.3V I/O, SPI, I²C, GPIO)</td></tr>
+  <tr><td>Power</td><td>ATX or 12V DC-in</td></tr>
+</table>
 
-    </table>
-  </section>
+<h3>🧑‍💻 Who It’s For</h3>
+<ul>
+  <li>Developers needing full control over ARM hardware</li>
+  <li>Security researchers working with testable, isolated systems</li>
+  <li>Educators teaching modern system design and architecture</li>
+  <li>Open-source OS and kernel contributors</li>
+  <li>Engineers tired of locked-down, soldered-on platforms</li>
+</ul>
 
-  <section>
-    <h2>🧑‍💻 Who It’s For</h2>
-    <ul>
-      <li>Developers wanting full control over ARM hardware</li>
-      <li>Security researchers needing isolated, testable systems</li>
-      <li>Educators teaching real system design</li>
-      <li>Open-source OS and kernel contributors</li>
-      <li>Engineers fed up with soldered-down black boxes</li>
-    </ul>
-  </section>
+<h3>📦 What’s Included</h3>
+<ul>
+  <li>AEGIS Apollo CPU (socketed, 12-core)</li>
+  <li>Libre Dev Kit motherboard (Micro-ATX)</li>
+  <li>2x 40-pin GPIO headers (Raspberry Pi-style layout)</li>
+  <li>Cooling fan + heatsink</li>
+  <li>Quick Start Guide</li>
+  <li>Open SDK + Board Support Package (Linux)</li>
+</ul>
 
-  <section>
-    <h2>📦 What's Included</h2>
-    <ul>
-      <li>AEGIS Libre Lite CPU (socketed)</li>
-      <li>Developer motherboard (Micro-ATX)</li>
-      <li>Cooling fan + heatsink</li>
-      <li>Quick Start Guide</li>
-      <li>Open SDK + Board Support Package (Linux)</li>
-    </ul>
-  </section>
+<h3>💡 Why AEGIS Libre?</h3>
+<p>No locked firmware. No soldered SoC. No NDAs just to boot Linux.<br>
+This is real open hardware — <strong>by developers, for developers.</strong></p>
 
-  <section>
-    <h2>💡 Why AEGIS Libre Lite?</h2>
-    <p>No locked firmware. No soldered-down SoC. No NDAs just to boot Linux.<br>
-    This is <strong>real open hardware</strong> — by developers, for developers.</p>
-  </section>
+<h3>🔗 Coming Soon</h3>
+<p>Join the waitlist or become a launch sponsor:<br>
+<a href="https://aegirontechnologies.github.io/aegis-libre-lite/">https://aegirontechnologies.github.io/aegis-libre-lite/</a></p>
 
-  <section class="contact">
-    <h2>🔗 Coming Soon</h2>
-    <p>Join the waitlist or become a launch sponsor.</p>
-    <p><strong>📧 Contact us:</strong> aegirontechnologies@gmail.com</p>
-  </section>
+<p><strong>📧 Contact us:</strong> aegirontechnologies@gmail.com</p>
 
-  <footer style="text-align: center; padding: 20px; font-size: 0.9em; color: #888;">
+<footer>
   <p><em>Powered by Aegiron Technologies</em><br>
   Creating open silicon for a sovereign future.<br>
   <strong>AEGIS Libre Dev Kit — Patent Pending</strong></p>
