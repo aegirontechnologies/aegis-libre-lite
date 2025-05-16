@@ -36,3 +36,7 @@ Most ARM hardware today is locked down and soldered in. AEGIS gives developers a
 ---
 
 > Built by Aegiron Technologies. Open silicon for an open future.
+
+## License
+This project is licensed under the CERN Open Hardware License v2 (Strongly Reciprocal).  
+See the [LICENSE](LICENSE) file for details.
